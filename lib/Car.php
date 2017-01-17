@@ -8,9 +8,9 @@ class Car {
 	private $abs = false;
 	private $doors;
 
-	public function __construct() {
-		$this->manufacturer = 'unknown';
-		$this->doors = 2;
+	public function __construct($manu,$door) {
+		$this->manufacturer = $manu;
+		$this->doors = $door;
 	}
 
 	public function getWheels() {
@@ -35,29 +35,15 @@ class Car {
 	public function setKilometrage($nbKilometre) {
 		return $this->kilometrage = $nbKilometre;
 	}
-	/**
-	 *	Retourne un booléen sur la disponibilité
-	 *	des airbags
-	 * 
-	 * @return  {boolean} Are airbag available 
-	 */
-
 	public function getAirbag() {
 		return $this->airbag;
 	}
-
-	/**
-	 * Définition de la disponibilité des airbags
-	 * 
-	 * @param $available {boolean}
-	 */
 	public function setAirbag($available) {
 		$this->airbag = $available;
 	}
 	public function getAbs() {
 		return $this->abs;
 	}
-
 	public function setAbs	($yesOrNot) {
 		return $this->abs = $yesOrNot;
 	}
