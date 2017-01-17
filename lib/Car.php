@@ -16,20 +16,25 @@ class Car {
 	public function getWheels() {
 		return $this->wheels;
 	}
-
-	/**
-	 * Retrourne une chaîne de caractère
-	 * 
-	 */
+	public function setWeels($weel){
+		return $this->wheels = $weel;
+	}
 
 	public function getManufacturer() {
 		return $this->manufacturer;
 	}
 
+
 	public function setManufacturer($name) {
 		$this->manufacturer = $name;
 	}
 
+	public function getKilometrage() {
+		return $this->kilometrage;
+	}
+	public function setKilometrage($nbKilometre) {
+		return $this->kilometrage = $nbKilometre;
+	}
 	/**
 	 *	Retourne un booléen sur la disponibilité
 	 *	des airbags
@@ -49,5 +54,17 @@ class Car {
 	public function setAirbag($available) {
 		$this->airbag = $available;
 	}
+	public function getAbs() {
+		return $this->abs;
+	}
 
+	public function setAbs	($yesOrNot) {
+		return $this->abs = $yesOrNot;
+	}
+	public function getDoors() {
+		return $this->doors;
+	}
+	public function setDoors($nbDoors) {
+		return $this->doors = $nbDoors;
+	}
 }
